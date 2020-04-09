@@ -215,6 +215,8 @@ void task3(RETURN_POINT_FLOAT getTask1,char ** files){
 
   Player * player1;
   Player * player2;
+  Player * maxPlayer1;
+  Player * maxPlayer2;
 
   stackNode * createStack;
   Queue * q;
@@ -227,6 +229,7 @@ void task3(RETURN_POINT_FLOAT getTask1,char ** files){
   int * storeLocalScore;
   int local_score_tara_1;
   int local_score_tara_2;
+
 
   createStack=NULL;
   WINNER=NULL;
@@ -270,9 +273,21 @@ void task3(RETURN_POINT_FLOAT getTask1,char ** files){
       }
       local_score_tara_1=0;
       local_score_tara_2=0;
+      maxPlayer1=NULL;
+      maxPlayer2=NULL;
       while(!isEmpty(q)){
         player1=deQueue(q);
         player2=deQueue(q);
+        if(maxPlayer1==NULL || maxPlayer2==NULL){
+          maxPlayer1=player1;
+          maxPlayer2=player2;
+        }
+        if(player1->score > maxPlayer1->score){
+            maxPlayer1=player1;
+        }
+         if(player2->score>maxPlayer2->score){
+            maxPlayer2=player2;
+        }
         storeLocalScore = playMatch(player1,player2,fp);
         local_score_tara_1+=storeLocalScore[0];
         local_score_tara_2+=storeLocalScore[1];
@@ -285,8 +300,18 @@ void task3(RETURN_POINT_FLOAT getTask1,char ** files){
       }else if(local_score_tara_2>local_score_tara_1){
         pushStack(&WINNER,country2);
       }else if(local_score_tara_2==local_score_tara_1){
-        printf("%s %s",country1->name,country2->name);
-        pushStack(&WINNER,country1);
+        if(maxPlayer1->score > maxPlayer2->score){
+          pushStack(&WINNER,country1);
+          printf("%s %d %s %d 1\n",country1->name,maxPlayer1->score,country2->name,maxPlayer2->score);
+        }else if(maxPlayer1->score<maxPlayer2->score){
+          pushStack(&WINNER,country2);
+          printf("%s %s 2",country1->name,country2->name);
+        }else if(maxPlayer1->score==maxPlayer2->score){
+          pushStack(&WINNER,country2);
+          printf("%s %s 3",country1->name,country2->name);
+        }
+
+
       }
 
     }
