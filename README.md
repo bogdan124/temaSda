@@ -10,6 +10,7 @@ Structura proiectului :
   -Foldere:
   NOTE:am eliminat stelutele de la pointeri deoarece imi inclina text-ul
   dar a trebuii sa fie de ajuns cat sa indice locatia functiei
+  <pre>
   <h5 style="color:red;font-size:12px;">
            -library->|<br />
                      |->alocmem->|<br/>
@@ -61,3 +62,4 @@ Structura proiectului :
          -main.c<br/>
          -makefile  <br/>                   
 </h1><br/>
+</pre>
