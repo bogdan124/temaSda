@@ -10,7 +10,7 @@ Structura proiectului :
   -Foldere:
   NOTE:am eliminat stelutele de la pointeri deoarece imi inclina text-ul
   dar a trebuii sa fie de ajuns cat sa indice locatia functiei
-+++-library->|
++++-library->|<br/>
 +++++++++++++|->alocmem->|
 +++++++++++++++++++++++++|-alocmem.c(functiile pentru alocare de memorie pentru  char,int,INDEX,Country..etc)
 +++++++++++++++++++++++++++++++++|-alocmem.h(headerele respective lui alocmem si functiile de care alocmem.c are nevoie sa ruleze)
