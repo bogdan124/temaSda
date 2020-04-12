@@ -12,52 +12,52 @@ Structura proiectului :
   dar a trebuii sa fie de ajuns cat sa indice locatia functiei
   <h5 style="color:red;font-size:12px;">
            -library->|<br />
-                     |->alocmem->|<br  />
-                                 |-alocmem.c(functiile pentru alocare de memorie pentru  char,int,INDEX,Country..etc)
-                                 |-alocmem.h(headerele respective lui alocmem si functiile de care alocmem.c are nevoie sa ruleze)
-                     |->filesFunc->|
-                                   |-file.ALL_TASK.c(predomina lucrul cu fisiere folosit in toate task-urile)            
-                                   |-file.ALL_TASK.h(headerele corespunzatoare lui .c)
-                     |->lists->|
-                               |-createList.t1.t2.c
-                               |-createList.t1.t2.h
-                     |->math->|
-                              |-math.t2.t3.c
-                              |-math.t2.t3.h                               
-                     |->queue->|
-                               |-queue.t3.c
-                               |-queue.t3.h
-                     |->stack->|
-                               |-stack.t3.c
-                               |-stack.t3.h
-                     |->structs->|
-                                 |-structs.h(toate structurile folosite)  
-                     |->tasks->|  (mai jos sunt functiile corespunzatoare fiecarui task in parte)     
-                               |->task1->|
-                                         |task1.c
-                                         |task1.h
-                               |->task2->|
-                                         |task2.c
-                                         |task2.h
-                               |->task3->|
-                                         |task3.c
-                                         |task3.h
-                               |->task4->|
-                                         |task4.c
-                                         |task4.h
-                               |->task5->|
-                                         |task5.c
-                                         |task5.h->
-                                                 ->
-                    |->tree->|(aici am functiile corespunzatore pentru BST)
-                             |tree.t4.t5.c
-                             |tree.t4.t5.h->    TREE insert(TREE node, Player key);
-                                          ->    TREE newNode(Player data);
-                                          ->    void inordine(TREE root, char files);
-                    |->usable->|(aici sunt functii care sunt folosite in toate task-urile)
-                               |usable.t1.t2.c
-                               |usable.t1.t2.h->char clearContentChar(char nume);
-                                              ->int checkIfIsNull(void any_pointer);
-         -main.c
-         -makefile                     
-</h1>
+                     |->alocmem->|<br/>
+                                 |-alocmem.c(functiile pentru alocare de memorie pentru  char,int,INDEX,Country..etc)<br/>
+                                 |-alocmem.h<br/>
+                     |->filesFunc->|<br/>
+                                   |-file.ALL_TASK.c(predomina lucrul cu fisiere folosit in toate task-urile)   <br/>         
+                                   |-file.ALL_TASK.h(headerele corespunzatoare lui .c)<br/>
+                     |->lists->|<br/>
+                               |-createList.t1.t2.c<br/>
+                               |-createList.t1.t2.h<br/>
+                     |->math->|<br/>
+                              |-math.t2.t3.c<br/>
+                              |-math.t2.t3.h<br/>                            
+                     |->queue->|<br/>
+                               |-queue.t3.c<br/>
+                               |-queue.t3.h<br/>
+                     |->stack->|<br/>
+                               |-stack.t3.c<br/>
+                               |-stack.t3.h<br/>
+                     |->structs->|<br/>
+                                 |-structs.h(toate structurile folosite)  <br/>
+                     |->tasks->|  (mai jos sunt functiile corespunzatoare fiecarui task in parte)<br/>     
+                               |->task1->|<br/>
+                                         |task1.c<br/>
+                                         |task1.h<br/>
+                               |->task2->|<br/>
+                                         |task2.c<br/>
+                                         |task2.h<br/>
+                               |->task3->|<br/>
+                                         |task3.c<br/>
+                                         |task3.h<br/>
+                               |->task4->|<br/>
+                                         |task4.c<br/>
+                                         |task4.h<br/>
+                               |->task5->|<br/>
+                                         |task5.c<br/>
+                                         |task5.h-><br/>
+                                                 -><br/>
+                    |->tree->|(aici am functiile corespunzatore pentru BST)<br/>
+                             |tree.t4.t5.c<br/>
+                             |tree.t4.t5.h->    TREE insert(TREE node, Player key);<br/>
+                                          ->    TREE newNode(Player data);<br/>
+                                          ->    void inordine(TREE root, char files);<br/>
+                    |->usable->|(aici sunt functii care sunt folosite in toate task-urile)<br/>
+                               |usable.t1.t2.c<br/>
+                               |usable.t1.t2.h->char clearContentChar(char nume);<br/>
+                                              ->int checkIfIsNull(void any_pointer);<br/>
+         -main.c<br/>
+         -makefile  <br/>                   
+</h1><br/>
