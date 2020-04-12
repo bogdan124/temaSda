@@ -8,11 +8,11 @@ Structura proiectului :
               - .t1.t2 sunt corespunzatoare task1,task2 (unde predomina codul respectiv)
               - ALL_TASK in toate task-urile(doar in filesFunc)
   -Foldere:
-           -library->|
-                     |->alocmem->|
-                                 |-alocmem.c(functiile pentru alocare de memorie pentru  char,int,INDEX,Country..etc)
-                                 |-alocmem.h
-                     |->filesFunc->|
+-library->|
+++++++++++|->alocmem->|
+++++++++++++++++++++++|-alocmem.c(functiile pentru alocare de memorie pentru  char,int,INDEX,Country..etc)
+++++++++++++++++++++++|-alocmem.h
+++++++++++|->filesFunc->|
                                    |-file.ALL_TASK.c(predomina lucrul cu fisiere folosit in toate task-urile)            
                                    |-file.ALL_TASK.h(headerele corespunzatoare lui .c)
                      |->lists->|
