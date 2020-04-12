@@ -21,7 +21,7 @@ Structura proiectului :
                      |->lists->|<br/>
                                |-createList.t1.t2.c<br/>
                                |-createList.t1.t2.h<br/>
-                     |->math->|<br/>
+                     |->math->|<br/> 
                               |-math.t2.t3.c<br/>
                               |-math.t2.t3.h<br/>                            
                      |->queue->|<br/>
