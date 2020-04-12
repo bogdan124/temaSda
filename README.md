@@ -48,8 +48,7 @@ Structura proiectului :
                                          |task4.h<br/>
                                |->task5->|<br/>
                                          |task5.c<br/>
-                                         |task5.h-><br/>
-                                                 -><br/>
+                                         |task5.h->void task5(TREE *root, char **files, Player player1, Player player2,int *number, int *isOK1, int *isOK2); <br/>
                     |->tree->|(aici am functiile corespunzatore pentru BST)<br/>
                              |tree.t4.t5.c<br/>
                              |tree.t4.t5.h->    TREE insert(TREE node, Player key);<br/>
