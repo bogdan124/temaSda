@@ -11,7 +11,7 @@ Structura proiectului :
            -library->|
                      |->alocmem->|
                                  |-alocmem.c(functiile pentru alocare de memorie pentru  char,int,INDEX,Country..etc)
-                                 |-alocmem.h(headerele respective lui alocmem si functiile de care alocmem.c are nevoie sa ruleze)
+                                 |-alocmem.h
                      |->filesFunc->|
                                    |-file.ALL_TASK.c(predomina lucrul cu fisiere folosit in toate task-urile)            
                                    |-file.ALL_TASK.h(headerele corespunzatoare lui .c)
