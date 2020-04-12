@@ -10,7 +10,7 @@ Structura proiectului :
   -Foldere:
   NOTE:am eliminat stelutele de la pointeri deoarece imi inclina text-ul
   dar a trebuii sa fie de ajuns cat sa indice locatia functiei
-  <div style="color:red;font-size:40px;">
+  <h1 style="color:red;font-size:40px;">
            -library->|<br/>
                      |->alocmem->|
                                  |-alocmem.c(functiile pentru alocare de memorie pentru  char,int,INDEX,Country..etc)
@@ -60,4 +60,4 @@ Structura proiectului :
                                               ->int checkIfIsNull(void any_pointer);
          -main.c
          -makefile                     
-</div>
+</h1>
