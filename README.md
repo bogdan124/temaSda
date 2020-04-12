@@ -1,15 +1,33 @@
-In caz de ceva mai exista o copie aici care nu mai este modificata
+<pre>In caz de ceva mai exista o copie aici care nu mai este modificata
+NOTE:exista posibilitatea sa nu se vada foarte bine structura in cazul acesta pe github readme-ul se vede bine
+am folosit tag-uri de html si arata mai bine
 https://github.com/bogdan124/temaSda/tree/master
 
-Structura proiectului :
+NOTE: In cazul in care ceva nu este bine explicat aici in cod sigur este explicat mai bine.
 
+Logica din spate:
+  -Task1:lista dublu inlantuita cu santinela este facuta in felul urmatorul
+        ->nodul predecesor este conectat la urmatorul iar urmatorul la el si asta se tot repeta
+        ->santinela conecteaza cu next partea din fata a listei si cu prev partea din spate iar valoarea ei este nula
+  -Task2:aici mi-am creat un vector cu adresele elementelor din liste si scorul lor
+        ->apoi am sortat crescator si am inceput sa elimin elementele(din lista le elimin) care au cea mai mare putere a lui 2 posibila
+  -Task3:am creat o stiva de tip structura in care am pus tarile ramasein turneu
+        ->am scos succesiv cate 2 tari apoi am parcurs jucatorii de la ele si i-am adaugat in coada
+        ->apoi am inceput sa fac meciurile dintre jucatori (in coada sunt elementele juc 1 juc 2 ,juc 1 juc 3)(practic meciurile efectiv care au loc)
+        ->i-am comparat si le-am dat punctaj
+        ->in stiva winner am pus tara castigatoare apoi am reinceput comparatiile pana in winner ramane doar o tara care este castigatoare
+  -Task4:de la task-ul 3 am preluat cele 4 tari si le-am pus jucatorii in BST
+        -apoi am inceput sa fac comparatii cand puneam jucatorii sa vad ce se afla in arbore
+  -Task5:mai intai verific existenta lor apoi caut si numar toti jucatorii cuprinsi intre cele 2 valori
+
+Structura proiectului :
+  -toate functiile sunt mai bune explicate in fisierele lor sau in headere
   -fiecare folder este format dintr-un fisier c si header-ul respectiv fisierului
         -astfel anumite fisiere se numesc ex.t1.t2.c
               - .t1.t2 sunt corespunzatoare task1,task2 (unde predomina codul respectiv)
               - ALL_TASK in toate task-urile(doar in filesFunc)
   -Foldere:
-  NOTE:am eliminat stelutele de la pointeri deoarece imi inclina text-ul
-  dar a trebuii sa fie de ajuns cat sa indice locatia functiei
+    </pre>
   <pre>
   <h5 style="color:red;font-size:12px;">
            -library->|<br/>
