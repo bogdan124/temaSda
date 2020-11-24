@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-1">
+
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <button type="button" class="btn btn-primary">Primary</button>
+
+    </div>
+    <div class="col-sm-1">
+
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-1">
+
+    </div>
+  </div>
+</div>
+
+<div class="container top_container">
+    <div class="row">
+
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <button type="button" class="btn btn-primary">Primary</button>
+  
+      </div>
+
+      <div class="col-sm-4">
+        <h3>Column 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4 card">
+        <h3>Column 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">Basic card</div>
+  </div>
+
+
+  <ul class="list-group" id="ul_lista">
+    <li class="list-group-item">First item</li>
+
+  </ul>
+  <input type="text" id="input1"/>
+  <input type="button" onclick="getInputText()"/>
+  <ul id="listAdaug">
+      <li></li>
+  </ul>
+  <script>
+    var subjects = [ 'PC', 'USO', 'Fizica', 'OOp'];
+    for(var i=0;i<subjects.length;i++){
+        console.log(subjects[i]);
+        
+        $("#ul_lista").append(" <li class='list-group-item'>"+subjects[i]+"</li>");
+    }
+    alert("hello");
+    function getInputText(){
+        var input1=document.getElementById('input1').value;
+        console.log(input1);
+        console.log("<li>"+input1+"</li>");
+        $("#listAdaug").append("<li>"+input1+"</li>");
+    }
+  </script>
+</body>
+</html>
